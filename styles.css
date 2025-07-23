@@ -1,24 +1,110 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+/* Reset default margins */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #333;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
   color: white;
-  padding: 20px;
-  text-align: center;
+  background-color: #1f1f1f;
 }
 
-main {
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer {
-  background-color: #eee;
+/* Header */
+.site-header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/hero-bg.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 10px;
-  font-size: 14px;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.subtitle span {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.cta {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background: #C271FF;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.tagline {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+.highlight {
+  color: #C271FF;
+}
+
+/* Profiles */
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.profile p {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
