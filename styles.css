@@ -12,6 +12,63 @@ body {
   line-height: 1.6;
 }
 
+/* =======================
+   VIDEOS SECTION
+   ======================= */
+.videos {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.videos-header h2 {
+  font-size: 36px;
+  color: #004aad;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.videos-header p {
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
+.videos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-card h3 {
+  padding: 16px;
+  font-size: 20px;
+  color: #222222;
+  font-weight: 600;
+  margin: 0;
+}
+
+
 /* HERO SECTION */
 .hero {
   background-color: #004aad;
