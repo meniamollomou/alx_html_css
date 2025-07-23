@@ -105,3 +105,70 @@ body {
   font-size: 18px;
   color: #888;
 }
+
+/* Membership Section */
+.membership {
+  background-color: #0f172a; /* dark blue background */
+  padding: 60px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.membership h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.membership h2 span {
+  color: #c084fc; /* pink-purple 'Free' text */
+}
+
+.membership .membership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.membership .card {
+  background-color: transparent;
+  color: #ffffff;
+  width: 200px;
+  padding: 20px;
+}
+
+.membership .card i {
+  font-size: 2.5rem;
+  color: #c084fc; /* icon color */
+  margin-bottom: 15px;
+}
+
+.membership .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.membership .card p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.membership .register-button {
+  background: linear-gradient(90deg, #c084fc, #a855f7);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.membership .register-button:hover {
+  background: linear-gradient(90deg, #a855f7, #c084fc);
+}
+
