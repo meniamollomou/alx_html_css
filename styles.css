@@ -206,3 +206,53 @@ body {
   line-height: 1.6;
 }
 
+/* Footer */
+.footer {
+  background-color: #000; /* or your Figma background color */
+  padding: 40px 20px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  height: 30px;
+  width: 30px;
+}
+
+.footer-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-icon img {
+  height: 24px;
+  width: 24px;
+  transition: transform 0.2s;
+}
+
+.footer-icon img:hover {
+  transform: scale(1.1);
+}
+
+
