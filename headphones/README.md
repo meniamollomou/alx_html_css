@@ -1,0 +1,2 @@
+🎧 Headphones - ALX HTML & CSS Project
+This project is part of the ALX Front-End Curriculum. It demonstrates a responsive web page layout based on a Figma design, showcasing key HTML and CSS skills including responsive design, font integration, content alignment, and interactivity through hover states.
