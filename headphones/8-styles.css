@@ -1,0 +1,408 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global image rule for control */
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Variables */
+:root {
+  --red: #FF6565;
+  --max-width: 1000px;
+  --main-font: 'Source Sans Pro', sans-serif;
+}
+
+/* General */
+body {
+  font-family: var(--main-font);
+  color: white;
+  background-color: black;
+}
+
+/* Header Section */
+.header {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: var(--red);
+}
+
+/* Hero Content */
+.hero {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: var(--red);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+.note {
+  font-size: 14px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* What We Do */
+.services {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background-color: #111;
+}
+
+.service {
+  text-align: center;
+  max-width: 300px;
+  flex: 1;
+  color: white;
+}
+
+/* Our Results Section */
+.our-results {
+  background-color: #ffffff;
+  color: black;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.our-results .section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.our-results .section-description {
+  font-size: 16px;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.result-item {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+/* Pentagon box */
+.pentagon {
+  width: 120px;
+  height: 120px;
+  background-color: var(--red);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto 10px;
+  transition: transform 0.3s ease;
+}
+
+.pentagon:hover {
+  transform: scale(1.05);
+}
+
+.result-item p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Contact Us Section */
+.contact-us {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.contact-us .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #090518;
+  color: #fff;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  height: 30px;
+  object-fit: contain;
+}
+
+.footer-right a {
+  margin-left: 15px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin: 0 8px;
+  display: inline-block;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.services .service {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.services .service:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.results-grid .result-item {
+  animation: bounceIn 1s ease forwards;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.results-grid .result-item:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav a {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .pentagon {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile Menu */
+@media (max-width: 480px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    z-index: 1000;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative;
+  }
+}
